@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+body {
+    background-image: url(./time.jpg);
+    background-size: cover;
+
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 1 fr 1 fr;
+    grid-template-rows: 1 fr 2 fr; 
+    grid-template-areas: 
+    ". header ."
+    "main main main";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+
+i {
+    font-size: 200%;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
